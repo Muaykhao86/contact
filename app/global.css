@@ -135,6 +135,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     line-height: 1;
     background-color: rgb(32, 32, 32);
 }
