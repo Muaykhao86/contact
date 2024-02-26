@@ -1,8 +1,8 @@
 import "./global.css";
 
 export const metadata = {
-  title: "Next.js Forms Example",
-  description: "Example application with forms and Postgres.",
+  title: "Daniel Hardiman's Website",
+  description: "Contact Daniel Hardiman and learn more about his work."
 };
 
 export default function RootLayout({

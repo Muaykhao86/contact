@@ -1,0 +1,148 @@
+
+
+
+.hero-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100vw;
+  max-width: 2300px;
+  overflow: hidden;
+  min-height: 3300px;
+  /* border: 2px solid rgb(0, 255, 26);     */
+}
+
+.hero-sky {
+  /* border: 2px solid rgb(255, 0, 179);     */
+  display: flex;
+  position: relative;
+  height: 200vh;
+  width: 100vw;
+  background-color: rgb(16, 2, 72);
+  background-image: 
+  radial-gradient(ellipse farthest-corner at 30% 0%, #c34baf5d 0%, #3318685c 55%),
+  radial-gradient(ellipse farthest-corner at 90% 20%, #44ea8456 0%, #3318685c 55%),
+  radial-gradient(ellipse farthest-corner at 80% 20%, #44eac656 0%, #0804105c 35%);
+  z-index: 0
+}
+
+.hero-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  /* border: 2px solid rgb(255, 0, 179);     */
+}
+
+.hero-moon {
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  top: -120px;
+  right: -120px;
+  background: rgb(207, 207, 212);
+  border-radius: 50%;
+  box-shadow: 0 0 5px #d3b3fc, 0 0 25px #f1edf7, 0 0 50px #f2f0f5,
+  0 0 100px #c9b3fc, 0 0 170px #999aad, inset 0 5px 12px 26px #f5f5f5,
+  inset -2px 8px 15px 36px #e6e6db;
+}
+
+.stars-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  /* border: 2px solid rgb(255, 251, 0);     */
+  /* min-width: 3000px;
+  min-height: 4242vh; */
+  /* top: -25%; */
+  /* right: 50%;
+  margin-top: -50%;
+  margin-right: -50%; */
+  z-index: -1;
+  animation: rotateStars 40s infinite linear;
+  /* transform-origin: center; */
+}
+
+@keyframes rotateStars {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.hero-content {
+  border: 1px solid red;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 4.5rem;
+  color: white;
+  text-transform: uppercase; /* Makes the text all caps */
+  letter-spacing: 0.2em; /* Increases spacing between letters */
+  text-shadow: 0 0 10px #0000ff, 0 0 20px #00e0fd, 0 0 30px #85e0ff, 0 0 40px #adf4ff; 
+  font-family: 'change', sans-serif; /* A futuristic font */
+}
+
+.hero-subtitle-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 1000px;
+}
+
+.change {
+.text-neon {
+  color: #00e0fd;
+  text-shadow: 0 0 10px #00e0fd, 0 0 20px #00e0fd, 0 0 30px #00e0fd, 0 0 40px #00e0fd;
+}
+  color:rgb(25, 182, 255);
+  margin-right: .2em;
+}
+.change:after {
+  content:"";
+  animation: change 4s linear infinite;
+}
+@keyframes change {
+  0% { content:""}
+  10% { content:"Cloud"}
+  20% { content:""}
+  30% { content:"API"}
+  40% { content:""}
+  50% { content: "AWS"}
+  60% { content: ""}
+  70% { content: "JS"}
+  80% { content: ""}
+  90% { content: "Node"}
+  100% { content: ""}
+}
+
+/* .hero-content{ */
+  /* border: 1px solid red; */
+  /* position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 4.5rem;
+  color: white; */
+
+  /* border: 2px solid rgb(0, 255, 26);     */
+/* } */

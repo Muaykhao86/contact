@@ -1,27 +1,15 @@
-import postgres from "postgres";
+import { Hero } from "@/app/components/Hero/Hero";
+import { Form } from "@/app/components/Form/Form";
+import React from 'react';
+// import Head from "next/head";
 
-import { AddForm } from "@/app/add-form";
-import { DeleteForm } from "@/app/delete-form";
-
-let sql = postgres(process.env.DATABASE_URL || process.env.POSTGRES_URL!, {
-  ssl: "allow",
-});
-
-export default async function Home() {
-  let todos = await sql`SELECT * FROM todos`;
-
+export default async function App() {
   return (
     <main>
-      <h1 className="sr-only">Todos</h1>
-      <AddForm />
-      <ul>
-        {todos.map((todo) => (
-          <li key={todo.id}>
-            {todo.text}
-            <DeleteForm id={todo.id} todo={todo.text} />
-          </li>
-        ))}
-      </ul>
+      <Hero />
+      {/* <About /> */}
+      <Form />      
+      {/* <button className="form-button" onClick={toggleLayout}>Click me</button> */}
     </main>
   );
 }
