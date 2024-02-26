@@ -3,7 +3,7 @@ import React from 'react';
 // import { Form } from "@/app/components/Form";
 // import Head from "next/head";
 
-export default async function F() {
+export default async function FormPage() {
   return (
     <main>
       {/* <Hero /> */}

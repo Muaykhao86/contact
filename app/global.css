@@ -136,7 +136,7 @@ body {
     flex-direction: column;
     justify-content: center;
     line-height: 1;
-    background-color: rgb(1, 234, 114);
+    background-color: rgb(32, 32, 32);
 }
 
 body>* {
@@ -145,13 +145,13 @@ body>* {
 
 main {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: rgb(228, 31, 31);
-    z-index: 4;
-    border: 2px solid rgb(255, 55, 0);
+    /* height: 100vh; */
+    background-color: rgb(32, 32, 32);
+    /* z-index: 4; */
+    /* border: 2px solid rgb(255, 55, 0); */
 }
 
 main>* {
