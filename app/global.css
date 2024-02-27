@@ -149,10 +149,7 @@ main {
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
     background-color: rgb(32, 32, 32);
-    /* z-index: 4; */
-    /* border: 2px solid rgb(255, 55, 0); */
 }
 
 main>* {
