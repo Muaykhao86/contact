@@ -28,8 +28,8 @@ function SubmitButton(statedata: statedata) {
       {pending ?
         "Sending..."
         : sent ?
-          "Message Sent!"
-          : "Send Message"
+          "Sent!"
+          : "Send"
       }
     </button>
   );
@@ -54,7 +54,7 @@ export const ContactForm: React.FC = () => {
       <button 
       className="form-button"  
       onClick={goBack}
-      >Go Back</button>
+      >Home</button>
       <SubmitButton message={state?.message} status={state?.status} />
       </div>
       <p aria-live="polite" className="sr-only" role="status">
