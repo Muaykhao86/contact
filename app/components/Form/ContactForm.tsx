@@ -15,7 +15,7 @@ interface statedata {
 
 function SubmitButton(statedata: statedata) {
   const { pending, data } = useFormStatus();
-  console.log('data', data);
+  // console.log('data', data);
   const status = statedata?.status;
   const sent = status === "success";
   const disabled = pending || sent;

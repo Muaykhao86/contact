@@ -207,6 +207,7 @@
 @media screen and (max-width: 780px) {
   .hero-content {
     font-size: 2.5rem;
+    height: 80vh;
   }
 }
 
@@ -232,7 +233,7 @@
 /* xtra small */
 @media screen and (max-width: 400px) {
   .hero-content {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .hero-moon {

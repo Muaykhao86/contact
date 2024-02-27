@@ -63,7 +63,7 @@ export async function sendMessage(
     // send email
     const command = new SendEmailCommand(input);
     const response = await client.send(command);
-    console.log("Sent email - response -> ", response)
+    // console.log("Sent email - response -> ", response)
 
     // change component to message sent so they cant send again
     return { message: `Sent message from ${data.email}`, status: "success"};
