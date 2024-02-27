@@ -38,6 +38,10 @@ function SubmitButton(statedata: statedata) {
 export const ContactForm: React.FC = () => {
   const router = useRouter();
   const [state, formAction] = useFormState(sendMessage, initialState);
+  const goBack = (a:any) => {
+    a.preventDefault();
+    router.push('/');
+  }
   return (
     <form action={formAction}>
       <label htmlFor="name">Name</label>
@@ -49,7 +53,7 @@ export const ContactForm: React.FC = () => {
       <div className="form-button-container">
       <button 
       className="form-button"  
-      onClick={() => router.push('/')}
+      onClick={goBack}
       >Go Back</button>
       <SubmitButton message={state?.message} status={state?.status} />
       </div>
